@@ -2,7 +2,6 @@ import express from "express";
 import helmet from "helmet";
 import hpp from "hpp";
 import mongoose from "mongoose";
-import morgan from "morgan";
 import cors from "cors";
 import config from "./config";
 
@@ -10,6 +9,8 @@ import config from "./config";
 import postsRoutes from "./routes/api/post";
 import userRoutes from "./routes/api/user";
 import authRoutes from "./routes/api/auth";
+
+import morgan from "morgan";
 
 const app = express();
 const { MONGO_URI } = config;
